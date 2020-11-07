@@ -1,20 +1,27 @@
 {
   "name": "food-service",
   "main": "index.js",
-
   "scripts": {
     "dev": "webpack-dev-server --mode=development",
     "prod": "webpack --mode=production"
   },
-
   "repository": {
     "type": "git",
     "url": "git+https://github.com/grchelka/goit-js-hw-10-food-service.git"
   },
-
   "dependencies": {
+    "handlebars-loader": "^1.7.1",
     "webpack": "^4.44.2",
     "webpack-cli": "^3.3.12",
     "webpack-dev-server": "^3.11.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.3",
+    "@babel/preset-env": "^7.12.1",
+    "babel-loader": "^8.1.0",
+    "css-loader": "^5.0.1",
+    "file-loader": "^6.2.0",
+    "html-webpack-plugin": "^4.5.0",
+    "style-loader": "^2.0.0"
   }
 }
