@@ -2,7 +2,10 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-    entry: './src/index.js',
+    entry: {
+        index: './src/index.js',
+    },
+    
     output: {
         path: path.resolve(__dirname, 'dist'),
         filename: 'food-service.bundle.js'
@@ -27,6 +30,20 @@ module.exports = {
             { 
                 test: /\.handlebars$/, 
                 loader: "handlebars-loader" 
+            },
+            {
+                test: /\.(gif|png|jpe?g|svg)$/i,
+                use: [
+                  {
+                    loader: 'url-loader',
+                    options: {
+                      name: '[path][name].[ext]',
+                      limit: 8192,
+                      esModule: false,
+                    },
+                  },
+                  'img-loader',
+                ],
             },
         ],
     },
