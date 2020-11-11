@@ -13,6 +13,8 @@
     "handlebars-loader": "^1.7.1",
     "img-loader": "^3.0.2",
     "material-design-icons": "^3.0.1",
+    "svg-sprite-loader": "^5.0.0",
+    "svgo-loader": "^2.2.1",
     "url-loader": "^4.1.0",
     "webpack": "^4.44.2",
     "webpack-cli": "^3.3.12",
